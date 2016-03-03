@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectDevices xmlns="urn:mtconnect.org:MTConnectDevices:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectDevices:1.2 ../MTConnectDevices_1.2.xsd">
+    <Header bufferSize="10" instanceId="1" creationTime="2016-02-27T17:25:00" sender="Bukito" version="1.0" assetCount="0" assetBufferSize="10"/>
+    <Devices>
+        <Device id="Bukito" uuid="BB157" name="Bukobot 3D printer">
+            <DataItems>
+                <DataItem id="availability" type="AVAILABILITY" name="availablility" category="EVENT"/>
+            </DataItems>
+            <Components>
+                <Axes id="axes" name="Axes">
+                    <Components>
+                        <Linear id="x" name="X">
+                            <DataItems>
+                                <DataItem id="xPos" name="Actual X Position" type="POSITION" subType="ACTUAL" category="SAMPLE" coordinateSystem="MACHINE" />
+                            </DataItems>
+                        </Linear>
+                        <Linear id="y" name="Y">
+                            <DataItems>
+                                <DataItem id="yPos" name="Actual Y Position" type="POSITION" subType="ACTUAL" category="SAMPLE" coordinateSystem="MACHINE" />
+                            </DataItems>
+                        </Linear>
+                        <Linear id="z" name="Z">
+                            <DataItems>
+                                <DataItem id="zPos" name="Actual Z Position" type="POSITION" subType="ACTUAL" category="SAMPLE" coordinateSystem="MACHINE" />
+                            </DataItems>
+                        </Linear>
+                    </Components>
+                </Axes>
+                <Sensor id="extruder" name="Extruder">
+                    <DataItems>
+                        <DataItem type="TEMPERATURE" id="extruderTemp" category="SAMPLE" name="Extruder Temp Sensor"/>
+                        <DataItem type="EXECUTION" id="extruderReady" category="EVENT" name="Extruder Ready State" />
+                    </DataItems>
+                </Sensor>
+                <Sensor id="bed" name="Bed">
+                    <DataItems>
+                        <DataItem type="TEMPERATURE" id="bedTemp" category="SAMPLE" name="Bed Temp Sensor"/>
+                        <DataItem type="EXECUTION" id="bedReady" category="EVENT" name="Bed Ready State" />
+                    </DataItems>
+                </Sensor>
+                <Sensor id="progress" name="Progress">
+                	<DataItems>
+                		<DataItem type="EXECUTION" id="buildProgress" category="EVENT" name="Build Progress State"></DataItem></DataItems></Sensor>
+            </Components>
+        </Device>
+    </Devices>
+</MTConnectDevices>

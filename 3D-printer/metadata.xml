@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Device>
+	<model>Bukito</model>
+	<company>Bukobot</company>
+	<type>3D Printer</type>
+	<material>PLA</material>
+	<maxWidth>125</maxWidth>
+	<maxDepth>150</maxDepth>
+	<maxHeight>125</maxHeight>
+	<buildAreaShape>Square</buildAreaShape>
+	<connectionType>USB</connectionType>
+</Device>

@@ -1,0 +1,9 @@
+{
+    "DeviceConfigurationFile":"/home/pi/3dpAdapter/printer_Config.xml",
+    "DeviceMetadataConfigurationFile":"/home/pi/3dpAdapter/metadata.xml",
+    "ErrorReference":"/home/pi/3dpAdapter/Errors.xml",
+    "HTTPHost":{
+        "IP":"0.0.0.0",
+        "Port":1080
+    }
+}
